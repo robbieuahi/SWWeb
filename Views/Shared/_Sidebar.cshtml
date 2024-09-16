@@ -1,0 +1,163 @@
+﻿<!-- Main Sidebar Container -->
+<aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="/home/dashboard" class="brand-link">
+        <img src="~/adminlte/dist/img/svosvemoz.png" alt="SWM-Svosve Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+        @*<img src="~/adminlte/dist/img/anamm.jpg" alt="ANAMM Logo" class="brand-image img-circle elevation-3" style="opacity: .8">*@
+        <span class="brand-text font-weight-light"><b>SWMOZ</b></span>
+    </a>
+
+    <!-- Sidebar Menu -->
+    <div class="sidebar">
+        <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                <!-- Add icons to the links using the .nav-icon class
+                     with font-awesome or any other icon font library -->
+                <li class="nav-item ">
+                    <a asp-action="dashboard" asp-controller="home" class="nav-link active">
+                        <i class="nav-icon fa fa-tachometer-alt"></i>
+                        <p>Dashboard  </p>
+                    </a>
+                </li>                
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                @*<i class="nav-icon fa fa-th"></i>*@
+                                <i class="bi bi-person-vcard-fill fs-5"></i>
+                                <p>
+                                    PAP
+                                    <i class="right fa fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+
+                                <li class="nav-item">
+                                    <a asp-action="index" asp-controller="Obitos" class="nav-link">
+                                        <i class="fa fa-angle-double-right"></i>
+                                        <p>PAPs</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a asp-action="Graficos" asp-controller="IMorgues" class="nav-link">
+                                        <i class="fa fa-angle-double-right"></i>
+                                        <p>Estruturas afectadas</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a asp-action="Quadros" asp-controller="IMorgues" class="nav-link">
+                                        <i class="fa fa-angle-double-right"></i>
+                                        <p>Lugares Espirituais</p>
+                                    </a>
+                                </li>                                 
+
+                                <li class="nav-item">
+                                        <a asp-action="Taxas" asp-controller="IMorgues" class="nav-link">
+                                            <i class="fa fa-angle-double-right"></i>
+                                            <p>Fotos</p>
+                                        </a>
+
+                                </li>
+                                
+                                @*<li class="nav-item">
+                                    <a asp-action="Menor1ano" asp-controller="IFetalMenor" class="nav-link">
+                                        <i class="fa fa-angle-double-right"></i>
+                                        <p>Fetal/Menor que 1 ano</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a asp-action="Mulheres" asp-controller="IMulheres" class="nav-link">
+                                        <i class="fa fa-angle-double-right"></i>
+                                        <p>Mulheres</p>
+                                    </a>
+                                </li>*@
+                            </ul>
+                        </li>                                            
+
+                    
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                @*<i class="nav-icon fa fa-th"></i>*@
+                                <i class="bi bi-person-plus-fill fs-5"></i>
+                                <p>
+                                    Queixa
+                                    <i class="right fa fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+
+                                <li class="nav-item">
+                                    <a asp-action="Index" asp-controller="ICemiterios" class="nav-link">
+                                        <i class="fa fa-angle-double-right"></i>
+                                        <p>Registo</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a asp-action="ObitosTransferidos" asp-controller="ObTransferidos" class="nav-link">
+                                        <i class="fa fa-angle-double-right"></i>
+                                        <p>Gestao de Queixas</p>
+                                    </a>
+                                </li>
+                                @*<li class="nav-item">
+                                    <a asp-action="Graficos" asp-controller="ICemiterios" class="nav-link">
+                                        <i class="fa fa-angle-double-right"></i>
+                                        <p>Gráficos</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a asp-action="Quadros" asp-controller="ICemiterios" class="nav-link">
+                                        <i class="fa fa-angle-double-right"></i>
+                                        <p>Quadros</p>
+                                    </a>
+                                </li>                             
+                                
+                                    <li class="nav-item">
+                                        <a asp-action="Taxas" asp-controller="ICemiterios" class="nav-link">
+                                            <i class="fa fa-angle-double-right"></i>
+                                            <p>Taxas</p>
+                                        </a>
+
+                                    </li>*@
+                                
+                            </ul>
+                        </li>                      
+
+                        @*<li class="nav-item ">
+                        <a asp-action="Index" asp-controller="Obitos" class="nav-link">
+                        <i class="nav-icon fa fa-th"></i>
+                        <p>Óbitos</p>
+                        </a>
+                        </li>*@
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                @*<i class="nav-icon fa fa-th"></i>*@
+                                <i class="bi bi-people-fill fs-5"></i>
+                                <p>
+                                    Admin
+                                    <i class="right fa fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="usuario" asp-action="index">
+                                        <i class="fa fa-angle-double-right"></i>
+                                        <p>Gestão de Usuários</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>       
+
+                
+                        <li class="nav-item">
+                            <a asp-action="Report" asp-controller="Obitos" class="nav-link">
+                                @*<i class="fa fa-edit nav-icon"></i>*@
+                                <i class="bi bi-card-checklist"></i>
+                                <p>Relatórios</p>
+                            </a>
+                        </li>
+
+            </ul>
+        </nav>
+    </div> <!-- /.sidebar-menu -->    
+</aside><!-- /.sidebar -->
+

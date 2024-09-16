@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <title>@ViewData["Title"] - SWWeb</title>
+    <!-- AdminLTE CSS -->
+    <link rel="stylesheet" href="~/adminlte/plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="~/adminlte/dist/css/adminlte.min.css">
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="~/adminlte/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/SWWeb.styles.css" asp-append-version="true" />
+</head>
+<body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
+    
+    @*<div class="container">
+        <main role="main" class="pb-3">*@
+    <partial name="_Navbar" />
+    <partial name="_Sidebar" />
+            @RenderBody()
+    <partial name="_Footer" />
+        @*</main>
+    </div>*@
+
+    
+    <!-- jQuery -->
+    <script src="~/adminlte/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="~/adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="~/adminlte/dist/js/adminlte.min.js"></script>
+    @*<script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>    
+    <script src="~/js/site.js" asp-append-version="true"></script>*@
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
