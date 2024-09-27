@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SWWeb", "SWWeb.csproj", "{3F57684E-D104-4763-B992-AFBA9212A8BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SWWeb", "SWWeb.csproj", "{3F57684E-D104-4763-B992-AFBA9212A8BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SW", "..\SW\SW.csproj", "{53B3A929-DA91-4264-9880-F4853111F889}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{3F57684E-D104-4763-B992-AFBA9212A8BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F57684E-D104-4763-B992-AFBA9212A8BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F57684E-D104-4763-B992-AFBA9212A8BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53B3A929-DA91-4264-9880-F4853111F889}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53B3A929-DA91-4264-9880-F4853111F889}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53B3A929-DA91-4264-9880-F4853111F889}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53B3A929-DA91-4264-9880-F4853111F889}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
